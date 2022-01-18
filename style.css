@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --primaryFont:'Roboto', sans-serif;
+    --primaryColor:#143D59;
+    --secondaryColor:#F4B41A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body{
+    font-family: var(--primaryFont);
+    margin: auto;
+    width: 700px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.brand-logo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--secondaryColor);
+}
+
+header ul li a:hover{
+    text-decoration:underline;
+}
+
+section{
+    margin-top: 100px;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.game-card {
+    height: 300px;
+    width: 300px;
+    margin: 0 0 40px;
+    border: 2px solid var(--primaryColor);
+    border-radius: 5px;
+}
+
+.game-card img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.game-card h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--secondaryColor);
+}
